@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "md-linkcheck"
+version = "0.1.0"
+description = "A zero-dependency Markdown link checker CLI"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "Ahmed", email = "klmascot130@gmail.com" }]
+
+[project.scripts]
+md-linkcheck = "md_linkcheck.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
